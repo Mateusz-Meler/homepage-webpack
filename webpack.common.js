@@ -4,8 +4,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = {
   /* here you can define another js file */
   entry: {
-    index: "./src/js/index.js",
-    another: "./src/js/another.js",
+    index: "./src/js/index.js", 
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -20,7 +19,7 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: ["@babel/preset-env"],
-          },
+          },   
         },
       },
       {
@@ -58,10 +57,16 @@ module.exports = {
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/another.html",
+      template: "./src/pages/nauka.html",
       inject: true,
-      chunks: ["index", "another"],
-      filename: "another.html",
+      chunks: ["index"],
+      filename: "nauka.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/zadania.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "zadania.html",
     }),
   ],
 };
