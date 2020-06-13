@@ -1,14 +1,16 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# WTF Webpack home-page
 
-Simple toolkit for your static websites development.
+Strona domowa Mateusza Melera
 
-## How to use it?
+## Co to jest ?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Jest to projekt, który powstał podczas realizacji kursu WTF Co ten Frontend.
 
-## Available scripts
+## Jak to uruchomić?
+
+Najpierw zrób `npm install`, a później masz następujące opcje:
 
 `npm run start` - runs development mode
 
