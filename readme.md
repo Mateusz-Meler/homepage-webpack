@@ -1,4 +1,4 @@
-![cover](./gh/printScreen.png)
+![cover](./public/og.png)
 
 # WTF Webpack home-page
 
