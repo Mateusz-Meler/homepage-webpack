@@ -30,7 +30,6 @@ body {
 
 .board {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 1fr);
   row-gap: 20px;
@@ -144,10 +143,14 @@ footer {
     font-size: 20px;
     text-decoration: none;
     margin-right: 10px;
-    &--home-page {
-      background-color: #b19e60;
-      color: #000;
+    transition: transform 500ms ease-in;
+    &:hover {
+      transform: scale(1.2);
     }
+  }
+  &--home-page {
+    background-color: #b19e60;
+    color: #000;
   }
 }
 
