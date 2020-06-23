@@ -9,10 +9,18 @@ html {
 }
 
 body {
-  background: #3C3B3F;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}  
+  background: #3c3b3f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #605c3c,
+    #3c3b3f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #605c3c,
+    #3c3b3f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 .board {
   display: grid;
@@ -62,14 +70,44 @@ footer {
   position: absolute;
   right: 10px;
   bottom: 10px;
+  font-family: none;
   &__facebook {
-    border-radius: 10px;
+    margin-right: 10px;
+    &--picture {
+      border-radius: 3px;
+      transition: transform 1s ease-in;
+      opacity: 1;
+      &:hover {
+        transform: scale(3);
+        opacity: 0.7;
+      }
+    }
   }
   &__linkedin {
-    border-radius: 10px;
+    margin-right: 10px;
+    &--picture {
+      border-radius: 3px;
+      transition: transform 1s ease-in;
+      opacity: 1;
+      &:hover {
+        transform: scale(3);
+        opacity: 0.7;
+      }
+    }
+  }
+  &__instagram {
+    margin-right: 10px;
+    &--picture {
+      border-radius: 3px;
+      transition: transform 1s ease-in;
+      opacity: 1;
+      &:hover {
+        transform: scale(3);
+        opacity: 0.7;
+      }
+    }
   }
 }
-
 .main-board {
   background: #ece4b7;
   border-radius: 10px;
