@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+@keyframes klepsydra {
+  0% {
+    transform: scale(1.5);
+  }
+}
+
 body {
   background: #3c3b3f; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -27,7 +33,7 @@ body {
 
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  row-gap: 20px;  
+  row-gap: 20px;
   column-gap: 30px;
   background-color: #ece4b7;
   position: relative;
@@ -62,6 +68,15 @@ footer {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.hourglass {
+  display: inline-block;
+  animation: klepsydra 1s ease-in-out infinite alternate;
+  transition: transform 500ms ease;
+  &:hover {
+    transform: rotate(180deg);
+  }
 }
 
 .links {
