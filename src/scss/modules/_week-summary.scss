@@ -1,0 +1,34 @@
+.week-summary {
+    padding: 16px;
+    border: 1px solid #fefefe;
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    background-color: #cfbc7e;
+    box-shadow: 0 8px 6px -6px black;
+    &__description {
+      color: #000;
+      background-color: #b19e60;
+    }
+    &__title {
+      color: #000;
+      text-align: center;
+      font-size: 25px;
+    }
+    &__title::before {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: #000;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 25px;
+      &__title {
+        font-size: 20px;
+        margin: 5px;
+      }
+    }
+  }
+  
