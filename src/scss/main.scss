@@ -3,7 +3,6 @@
 @import "modules/section";
 @import "modules/week-summary";
 
-
 @keyframes klepsydra {
   0% {
     transform: scale(1.5);
@@ -112,6 +111,13 @@ footer {
     transform: rotate(180deg);
   }
 }
+
+.list__item {
+  margin-bottom: 10xpx;
+  padding: 16px;
+  font-size: 16px;
+}
+
 .main-board {
   background: #ece4b7;
   border-radius: 10px;

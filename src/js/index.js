@@ -24,6 +24,23 @@ hamburger.addEventListener("click", () => {
   nav.classList.toggle("navigation--open");
 });
 
+fetch('https://api.github.com/users/mateusz-meler/repos?sort=created&direction=asc')
+  .then((resp) => resp.json())
+  .then((resp) => {
+    for (let repo of resp) {
+      const {name, html_url} = repo;
+      const repositoryList = document.querySelector('.list--js');
+      const myTemplate = `<li class=list__item>
+      ${name} <a href="${html_url}" title="link do repozytorium ${name} na githubie">link do githuba</a> 
+      </li>`;
+      repositoryList.innerHTML += myTemplate;
+    }
+  })
+  .catch((error) => {
+    console.log("error");
+  });
+
+
 const navigation = document.querySelector(".navigation__link--home-page--js");
 navigation.addEventListener("mouseenter", () =>
   navigation.classList.add("yellow-class")
